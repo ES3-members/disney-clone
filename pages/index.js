@@ -39,7 +39,7 @@ export const getStaticProps = async () => {
 
     const accountQuery = gql`
     query {
-    account(where: { id: "cksggd6jc9j1k0b09zj98fnec"}) {
+    account(where: { id: "ckucogoe0gcy409867pefsfko"}) {
       username
       avatar {
         url
