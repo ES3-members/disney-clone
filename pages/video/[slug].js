@@ -2,7 +2,7 @@ import { gql, GraphQLClient } from 'graphql-request'
 import { useState } from 'react';
 
 export const getServerSideProps = async (pageContext) => {
-    const url = process.env.ENDPOINT
+    const url = process.env.GRAPH_CMS_ENDPOINT
     const graphQLClient = new GraphQLClient(url, {
         headers: {
             "Authorization" : `Bearer ${process.env.GRAPH_CMS_TOKEN}`
