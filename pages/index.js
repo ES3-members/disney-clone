@@ -10,7 +10,7 @@ import starwarsLogo from '../public/star-wars-button.png'
 import pixarLogo from '../public/pixar.png'
 
 export const getStaticProps = async () => {
-    const url = process.env.ENDPOINT
+    const url = process.env.GRAPH_CMS_ENDPOINT
     const graphQLClient = new GraphQLClient(url, {
         headers: {
             "Authorization": `Bearer ${process.env.GRAPH_CMS_TOKEN}`
